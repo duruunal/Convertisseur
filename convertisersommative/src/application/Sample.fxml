@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="335.0" prefWidth="565.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SampleController">
+   <children>
+      <TabPane prefHeight="286.0" prefWidth="456.0" style="-fx-background-color: F5FCFF;" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <tabs>
+          <Tab text="Introduction">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: A9BD93;">
+                     <children>
+                        <Text fx:id="titre5" fill="#362525" layoutX="107.0" layoutY="74.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Convertisseur d'unités" textAlignment="CENTER" wrappingWidth="350.22900390625">
+                           <font>
+                              <Font size="49.0" />
+                           </font>
+                        </Text>
+                        <Text fill="#362525" layoutX="106.0" layoutY="171.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bienvenue dans un convertisseur d'unité! La conversion d'unités est un processus dans lequel les différentes unités disponibles dans le monde peuvent être converties les unes dans les autres avec un processus de multiplication ou de division par un facteur numérique." textAlignment="CENTER" wrappingWidth="352.22900390625">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Text>
+                        <Button layoutX="474.0" layoutY="261.0" mnemonicParsing="false" onAction="#Fermerappication" prefHeight="27.0" prefWidth="77.0" text="Quitter" textFill="RED" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Règles">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: A9BD93;">
+                     <children>
+                        <Text fx:id="titre4" fill="#362525" layoutX="27.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Règles de ce convertisseur d'unité">
+                           <font>
+                              <Font size="36.0" />
+                           </font>
+                        </Text>
+                        <Text fill="#362525" layoutX="47.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1. Entrez uniquement des valeurs numériques, les valeurs non numériques ne seront pas converties" wrappingWidth="453.22900390625" />
+                        <Text fill="#362525" layoutX="47.0" layoutY="180.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2. Seulement 4 types de mesures différents pour chaque unité" wrappingWidth="453.22900390625" />
+                        <Button layoutX="466.0" layoutY="261.0" mnemonicParsing="false" onAction="#Fermerappication" prefHeight="27.0" prefWidth="85.0" text="Quitter" textAlignment="CENTER" textFill="RED" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="Devise">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: A9BD93;">
+                     <children>
+                        <TextField fx:id="text1" layoutX="84.0" layoutY="81.0" onKeyReleased="#calculer" prefHeight="39.0" prefWidth="148.0" text="1" />
+                        <TextField fx:id="text2" layoutX="321.0" layoutY="83.0" onKeyReleased="#calculer1" prefHeight="36.0" prefWidth="154.0" text="1" />
+                        <ComboBox fx:id="combobox1" layoutX="83.0" layoutY="124.0" onAction="#calculer" prefWidth="150.0" />
+                        <ComboBox fx:id="combobox2" layoutX="323.0" layoutY="124.0" onAction="#calculer1" prefWidth="150.0" />
+                        <Text fx:id="titre3" fill="#362525" layoutX="155.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Convertisseur de Devises" wrappingWidth="255.22900390625">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Text>
+                        <Button layoutX="480.0" layoutY="261.0" mnemonicParsing="false" onAction="#Fermerappication" prefHeight="27.0" prefWidth="71.0" text="Quitter" textFill="RED" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="Longueur">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: A9BD93;">
+                     <children>
+                        <TextField fx:id="text3" layoutX="70.0" layoutY="79.0" onKeyReleased="#calculer2" prefHeight="37.0" prefWidth="149.0" text="1" />
+                        <TextField fx:id="text4" layoutX="331.0" layoutY="80.0" onKeyReleased="#calculer3" prefHeight="35.0" prefWidth="152.0" text="1" />
+                        <ComboBox fx:id="combobox3" layoutX="69.0" layoutY="119.0" onAction="#calculer2" prefWidth="150.0" />
+                        <ComboBox fx:id="combobox4" layoutX="332.0" layoutY="119.0" onAction="#calculer3" prefWidth="150.0" />
+                        <Text fx:id="titre2" fill="#362525" layoutX="135.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Convertisseur de longueur" textAlignment="CENTER" wrappingWidth="295.22900390625">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Text>
+                        <Button layoutX="470.0" layoutY="261.0" mnemonicParsing="false" onAction="#Fermerappication" prefHeight="27.0" prefWidth="81.0" text="Quitter" textFill="RED" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="Poids">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: A9BD93;">
+                     <children>
+                        <TextField fx:id="text5" layoutX="74.0" layoutY="77.0" onKeyReleased="#calculer4" prefHeight="42.0" prefWidth="152.0" text="1" />
+                        <TextField fx:id="text6" layoutX="322.0" layoutY="80.0" onKeyReleased="#calculer5" prefHeight="39.0" prefWidth="153.0" text="1" />
+                        <ComboBox fx:id="combobox5" layoutX="75.0" layoutY="122.0" onAction="#calculer4" prefWidth="150.0" />
+                        <ComboBox fx:id="combobox6" layoutX="323.0" layoutY="122.0" onAction="#calculer5" prefWidth="150.0" />
+                        <Text fx:id="titre1" fill="#362525" layoutX="167.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Convertisseur de poids" textAlignment="CENTER">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Text>
+                        <Button layoutX="477.0" layoutY="261.0" mnemonicParsing="false" onAction="#Fermerappication" prefHeight="27.0" prefWidth="74.0" text="Quitter" textFill="RED" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="Temperature">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="302.0" prefWidth="469.0" style="-fx-background-color: A9BD93;">
+                     <children>
+                        <TextField fx:id="text7" layoutX="76.0" layoutY="88.0" onKeyReleased="#calculer6" prefHeight="39.0" prefWidth="150.0" text="1" />
+                        <TextField fx:id="text8" layoutX="318.0" layoutY="89.0" onKeyReleased="#calculer7" prefHeight="38.0" prefWidth="146.0" text="1" />
+                        <ComboBox fx:id="combobox7" layoutX="76.0" layoutY="131.0" onAction="#calculer6" prefWidth="150.0" />
+                        <ComboBox fx:id="combobox8" layoutX="316.0" layoutY="131.0" onAction="#calculer7" prefWidth="150.0" />
+                        <Text fx:id="titre" fill="#362525" layoutX="133.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Convertisseur de température">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Text>
+                        <Button layoutX="471.0" layoutY="261.0" mnemonicParsing="false" onAction="#Fermerappication" prefHeight="27.0" prefWidth="80.0" text="Quitter" textFill="RED" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>
